@@ -351,7 +351,7 @@ CC		= $(srctree)/scripts/gcc-wrapper.py $(REAL_CC)
 
 CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
-KERNELFLAGS   = -DNDEBUG -munaligned-access -fgcse-lm -fgcse-sm -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -mcpu=cortex-a9 -mtune=cortex-a9 -marm -mfpu=neon -ftree-vectorize -fgcse-las -fmodulo-sched -fmodulo-sched-allow-regmoves 
+KERNELFLAGS   = -DNDEBUG -munaligned-access -fgcse-lm -fgcse-sm -fsched-spec-load -fforce-addr -ffast-math -fsingle-precision-constant -mcpu=cortex-a7 -mtune=cortex-a7 -marm -mfpu=neon -ftree-vectorize -fgcse-las -fmodulo-sched -fmodulo-sched-allow-regmoves 
 GRAPHITEFLAGS  = -fgraphite-identity -floop-strip-mine -funroll-loops -floop-flatten -funroll-loops -floop-flatten -ftree-loop-distribution -floop-block 
 
 MODFLAGS	= -DMODULE $(KERNELFLAGS)
